@@ -21,7 +21,6 @@
 .anteojosm {
     border: solid 5px black;
     border-radius: 20px;
-
 }
 
 
@@ -320,7 +319,7 @@ body {
     display: grid;
     height: 88px;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(23, 23, 97), rgb(13, 42, 66));
+    background-image: linear-gradient(to right, rgb(139, 139, 139), rgb(15, 44, 68));
     color: white;
     grid-template-areas: "desarrollado seguinos redes-sociales";
 
@@ -350,7 +349,7 @@ body {
 
 .mainNos {
     height: 80vh;
-    background-image: radial-gradient(rgb(24, 189, 255), white);
+    background-image: linear-gradient(to right, rgb(235, 229, 229), rgb(69, 148, 214));
     background-position: center;
     max-width: 100%;
     display: grid;
@@ -361,7 +360,7 @@ body {
 .mainNos .textoMain {
     grid-column: 4/8;
     grid-row: 2/6;
-    color: rgb(42, 36, 36);
+    color: rgb(0, 0, 0);
 }
 
 .mainNos h3 {
@@ -377,7 +376,7 @@ body {
     font-weight: 10px;
 }
 
-.botonNos {   
+.botonNos {
     font-family: 'Courier New';
     font-size: 19px;
     font-weight: 600;
@@ -393,38 +392,36 @@ body {
 }
 
 /*contacto*/
-.mainContacto{
+.mainContacto {
     height: 80vh;
-    background-image: radial-gradient(rgb(24, 189, 255),white) ;
-background-position: center;
-max-width: 100%;
-display: grid;
-grid-template-columns: repeat(10,1fr);
-grid-template-rows: repeat(8,1fr);
+    background-image: linear-gradient(to right, rgb(235, 229, 229), rgb(69, 148, 214));
+    background-position: center;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 }
 
 /*sale*/
-.mainSale{
-    height: 80vh;
-    background-image: radial-gradient(rgb(24, 189, 255),white) ;
-background-position: center;
-max-width: 100%;
-display: grid;
-grid-template-columns: repeat(10,1fr);
-grid-template-rows: repeat(8,1fr);
+.mainSale {
+    height: 90vh;
+    background-image: linear-gradient(to right, rgb(235, 229, 229), rgb(69, 148, 214));
+    background-position: center;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
 }
 
 
 /*catalogo*/
 
-.mainCat{
+.mainCat {
     height: 80vh;
-    background-image: radial-gradient(rgb(24, 189, 255),white) ;
-background-position: center;
-max-width: 100%;
-display: grid;
-grid-template-columns: repeat(10,1fr);
-grid-template-rows: repeat(8,1fr);
+    background-image: linear-gradient(to right, rgb(235, 229, 229), rgb(69, 148, 214));
+    background-position: center;
+    max-width: 100%;
 }
 
 
@@ -443,6 +440,10 @@ grid-template-rows: repeat(8,1fr);
         grid-column: 8/9;
         font-size: 30px;
         cursor: pointer;
+    }
+
+    .nav {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
     }
 
     .nav .menu {
@@ -470,6 +471,7 @@ grid-template-rows: repeat(8,1fr);
         border: solid 1px white;
     }
 
+
     /*footer*/
     .pieDePagina {
         height: 110px;
@@ -483,6 +485,7 @@ grid-template-rows: repeat(8,1fr);
         font-size: 15px;
     }
 }
+
 
 
 /*otra forma de usar mediaqueries*/
@@ -507,3 +510,4 @@ grid-template-rows: repeat(8,1fr);
         display: none;
     }
 }
+

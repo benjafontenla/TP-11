@@ -354,6 +354,7 @@ body {
     background-size: cover;
     background-position: center;
     max-width: 100%;
+    padding: 5em;
 }
 .nosotros{
     max-width: 25em;
@@ -375,11 +376,12 @@ body {
     background-position: center;
     background-size: cover;
     max-width: 100%;
+    padding: 3em;
 
 }
 .formulario1{
-    max-width:25em;
-    padding:1.3em;
+    max-width:30em;
+    padding:1.5em;
     margin:0 auto; /*se posiciona al centro*/
     background-color: rgba(120,119,123,0.3);
     font-weight: bold;
@@ -396,7 +398,8 @@ body {
     background-position: center;
     max-width: 100%;
     background-size: cover;
-}
+    padding: 2em;
+}   
 
 
 /*catalogo*/
@@ -407,6 +410,7 @@ body {
     background-position: center;
     max-width: 100%;
     background-size: cover;
+    padding: 2em;
 }
 
 
@@ -500,3 +504,11 @@ body {
     }
 }
 
+/*pseudoclase*/
+
+.menu .enlace:hover{
+    color:black;
+}
+.formulario .email:invalid{
+    border:solid 2px red;
+}

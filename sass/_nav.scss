@@ -1,0 +1,51 @@
+//declaracion de variables
+$color-principal:rgb(243, 235, 235);
+
+
+.nav {
+    /*background-color: black;*/
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    color: $color-principal;
+    background-image: linear-gradient(to right, rgb(252, 252, 255), rgb(15, 44, 68));
+
+
+.logo {
+    width: 60px;
+    height: 60px;
+    grid-column: 2/3;
+    transform: translate(-150px);
+    /*transform: scale(1,1);*/
+    /*transform: skew(20deg,10deg);*/
+    /*transform: rotate(80deg); */
+    animation-name: rotar_logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 4/7;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.carrito {
+    grid-column: 8/9;
+}
+}

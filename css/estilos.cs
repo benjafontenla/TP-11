@@ -1,4 +1,4 @@
-.nav, .navSale, .navContacto, .navNos, .navCat {
+.nav {
   /*background-color: black;*/
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -6,7 +6,7 @@
   color: rgb(243, 235, 235);
   background-image: linear-gradient(to right, rgb(252, 252, 255), rgb(15, 44, 68));
 }
-.nav .logo, .navSale .logo, .navContacto .logo, .navNos .logo, .navCat .logo {
+.nav .logo {
   width: 60px;
   height: 60px;
   grid-column: 2/3;
@@ -20,63 +20,24 @@
   animation-duration: 3s;
   animation-delay: 3s;
 }
-.nav .menu, .navSale .menu, .navContacto .menu, .navNos .menu, .navCat .menu {
+.nav .menu {
   display: flex;
   justify-content: space-around;
   grid-column: 4/7;
 }
-.nav .menu li, .navSale .menu li, .navContacto .menu li, .navNos .menu li, .navCat .menu li {
+.nav .menu li {
   list-style: none;
 }
-.nav .menu a, .navSale .menu a, .navContacto .menu a, .navNos .menu a, .navCat .menu a {
+.nav .menu a {
   text-decoration: none;
   color: white;
   cursor: pointer;
 }
-.nav .menu-bar, .navSale .menu-bar, .navContacto .menu-bar, .navNos .menu-bar, .navCat .menu-bar {
+.nav .menu-bar {
   display: none;
 }
-.nav .carrito, .navSale .carrito, .navContacto .carrito, .navNos .carrito, .navCat .carrito {
+.nav .carrito {
   grid-column: 8/9;
-}
-
-/*Regla Each*/
-.fondo-gris-1 {
-  background-color: #ccc;
-}
-
-.fondo-gris-2 {
-  background-color: #aeaeae;
-}
-
-.fondo-gris-3 {
-  background-color: #a4a4a4;
-}
-
-/*each redes*/
-.btn--twitter {
-  background-color: #55acee;
-}
-
-.btn--facebook {
-  background-color: #3a5795;
-}
-
-.btn--send-email {
-  background-color: #c25e30;
-}
-
-/*maps*/
-h3 {
-  color: white;
-  background-color: none;
-}
-
-/*mixins con parametros*/
-h4 {
-  font-size: 20px;
-  text-transform: uppercase;
-  color: White;
 }
 
 * {
@@ -87,6 +48,48 @@ h4 {
 
 body {
   font-family: "Helvetica Neue";
+}
+
+.nav {
+  /*background-color: black;*/
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(to right, rgb(252, 252, 255), rgb(15, 44, 68));
+}
+.nav .logo {
+  width: 60px;
+  height: 60px;
+  grid-column: 2/3;
+  transform: translate(-150px);
+  /*transform: scale(1,1);*/
+  /*transform: skew(20deg,10deg);*/
+  /*transform: rotate(80deg); */
+  animation-name: rotar_logo;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+.nav .menu {
+  display: flex;
+  justify-content: space-around;
+  grid-column: 4/7;
+}
+.nav .menu li {
+  list-style: none;
+}
+.nav .menu a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.nav .menu-bar {
+  display: none;
+}
+.nav .carrito {
+  grid-column: 8/9;
 }
 
 /*aniamciones*/
@@ -259,26 +262,26 @@ body {
 
 /*mediaqueries*/
 @media screen and (max-width: 600px) {
-  .nav, .navCat, .navNos, .navContacto, .navSale {
+  .nav {
     position: relative;
   }
 
-  .nav .carrito, .navCat .carrito, .navNos .carrito, .navContacto .carrito, .navSale .carrito {
+  .nav .carrito {
     display: none;
   }
 
-  .nav .menu-bar, .navCat .menu-bar, .navNos .menu-bar, .navContacto .menu-bar, .navSale .menu-bar {
+  .nav .menu-bar {
     display: block;
     grid-column: 8/9;
     font-size: 30px;
     cursor: pointer;
   }
 
-  .nav, .navCat, .navNos, .navContacto, .navSale {
+  .nav {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serifs;
   }
 
-  .nav .menu, .navCat .menu, .navNos .menu, .navContacto .menu, .navSale .menu {
+  .nav .menu {
     display: none;
   }
 
@@ -322,22 +325,22 @@ body {
 }
 /*otra forma de usar mediaqueries*/
 @media (min-width: 601px) and (max-width: 900px) {
-  .nav, .navCat, .navNos, .navContacto, .navSale {
+  .nav {
     position: relative;
   }
 
-  .nav .carrito, .navCat .carrito, .navNos .carrito, .navContacto .carrito, .navSale .carrito {
+  .nav .carrito {
     display: none;
   }
 
-  .nav .menu-bar, .navCat .menu-bar, .navNos .menu-bar, .navContacto .menu-bar, .navSale .menu-bar {
+  .nav .menu-bar {
     display: block;
     grid-column: 8/9;
     font-size: 30px;
     cursor: pointer;
   }
 
-  .nav .menu, .navCat .menu, .navNos .menu, .navContacto .menu, .navSale .menu {
+  .nav .menu {
     display: none;
   }
 }
@@ -350,4 +353,4 @@ body {
   border: solid 2px red;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.cs.map */

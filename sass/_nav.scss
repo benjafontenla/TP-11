@@ -41,29 +41,6 @@ $color-principal:rgb(243, 235, 235);
         cursor: pointer;
     }
 
-    .menu-bar {
-        display: none;
-    }
-
-    .carrito {
-        grid-column: 8/9;
-    }
-}
-
-
-//extend
-.navCat{
-    @extend .nav;
-}
-.navNos{
-    @extend .nav;
-}
-.navContacto{
-    @extend .nav;
-}
-.navSale{
-    @extend .nav;
-}
 
 /*Regla Each*/
 $arreglo-colores: (

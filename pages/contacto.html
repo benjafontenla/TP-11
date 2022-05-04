@@ -23,31 +23,37 @@
 
 <body>
     <header>
-        <nav class="navContacto">
-            <img class="logo" src="../galeria/Logo hima png.png" alt="logo-himalaya">
-            <ul class="menu">
-                <li>
-                    <a class="enlace" href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a class="enlace" href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a class="enlace" href="catalogo.html">Catalogo</a>
-                </li>
-                <li>
-                    <a class="enlace" href="sale.html">Sale</a>
-                </li>
-                <li>
-                    <a class="enlace" href="#">Contacto</a>
-                </li>
-            </ul>
-
-            <div class="menu-bar">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="carrito">
-                <i class="fa-solid fa-cart-shopping"></i>
+        <nav class="navbar navbar-expand-lg navbar-light bg-ligt" style="background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(42, 78, 107)); ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../galeria/Logo hima png.png" alt="logo" width="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/catalogo.html">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/sale.html">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <div class="carrito">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </form>
+                </div>
             </div>
         </nav>
     </header>
@@ -81,9 +87,9 @@
 
                         <!--boton-->
                         <div class="form-group">
-                            <button type="submit" class="btn btn-success btn-block">Enviar</button>
-                            <button type="submit" class="btn btn-danger  btn-block">Borrar</button>
-                            <button type="submit" class="btn btn-danger  btn-block">Cancelar</button>
+                            <button type="submit" class="btn btn-outline-dark btn-block">Enviar</button>
+                            <button type="submit" class="btn btn-outline-danger  btn-block">Borrar</button>
+                            <button type="submit" class="btn btn-outline-danger  btn-block">Cancelar</button>
                         </div>
 
                 </form>

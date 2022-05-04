@@ -98,8 +98,9 @@ body {
     display: grid;
     height: 88px;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(139, 139, 139), rgb(15, 44, 68));
-    color: white;
+    background-image: linear-gradient(to right, rgb(255, 244, 244), rgb(62, 68, 200));
+    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     grid-template-areas: "desarrollado seguinos redes-sociales";
 
 }
@@ -195,28 +196,6 @@ body {
 
 /*mediaqueries*/
 @media screen and (max-width: 600px) {
-    .nav {
-        position: relative;
-    }
-
-    .nav .carrito {
-        display: none;
-    }
-
-    .nav .menu-bar {
-        display: block;
-        grid-column: 8/9;
-        font-size: 30px;
-        cursor: pointer;
-    }
-
-    .nav {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
-    }
-
-    .nav .menu {
-        display: none;
-    }
 
 
     /*main*/
@@ -262,26 +241,6 @@ body {
 
 /*otra forma de usar mediaqueries*/
 
-@media (min-width:601px) and (max-width: 900px) {
-    .nav {
-        position: relative;
-    }
-
-    .nav .carrito {
-        display: none;
-    }
-
-    .nav .menu-bar {
-        display: block;
-        grid-column: 8/9;
-        font-size: 30px;
-        cursor: pointer;
-    }
-
-    .nav .menu {
-        display: none;
-    }
-}
 
 /*pseudoclase*/
 

@@ -1,39 +1,48 @@
-let ingresar = false;
+//1er PreEntrega
 
-let nombreUsuario = prompt('Ingresa tu nombre')
-alert('Bienvenido/a ' + nombreUsuario)
-
-let descuento = 'himalayasale';
-for (let i = 0; i < 3; i++) {
-    let codigo = prompt('Ingresa tu codigo de descuento');
-
-    if (descuento == codigo) {
-        alert('Felicitaciones ' + nombreUsuario + ',' + ' tu descuento de $1000 ha sido aplicado correctamente');
-        ingresar = true;
-        break;
-    } else {
-        alert('El codigo es incorrecto')
+class camisetas {
+    constructor(equipo, modelo, numeroDeArticulo) {
+        this.equipo = equipo;
+        this.modelo = modelo;
+        this.numeroDeArticulo = numeroDeArticulo;
+    }
+    //Function
+    ver() {
+        alert('Tenemos disponible el modelo ' + this.modelo + ' del equipo de ' + this.equipo + '.' + ' Podes encontrar este producto en la seccion "Camisetas."');
     }
 }
 
-//Calcula de 2 productos + el iva - descuento 
-if (ingresar) {
-    const suma = (numeroA, numeroB, numeroC, numeroD) => numeroA + numeroB + numeroC + numeroD
-    const resta = (numeroA, numeroB) => numeroA - numeroB
+const camiseta1 = new camisetas('ferro', 'titular', 01);
+const camiseta2 = new camisetas('comunicaciones', 'alternativo', 02);
+const camiseta3 = new camisetas('allboys', 'alternativo', 03);
+const camiseta4 = new camisetas('argentinosjuniors', 'titular', 04);
+const camiseta5 = new camisetas('flandria', 'titular', 05)
 
-    const impuestos = (x) => x * 0.21
-    const impuestosB = (x) => x * 0.21
+let busquedaCamiseta = false;
 
-
-    let precioProductoA = 5000
-    let precioProductoB = 2500
-    let descuentoEspecial = 1000
-
-
-
-    let nuevoPrecio = resta(suma(precioProductoA, precioProductoB, impuestos(precioProductoA), impuestosB(precioProductoB)), descuentoEspecial)
-
-
-    alert('El producto selecionado te queda en un costo final de $' + nuevoPrecio + '.' + ' (Descuento e impuestos aplicados)')
-    console.log(nuevoPrecio)
+for (let i = 0; i < 3; i++) {
+    let ingresar = prompt('Ingresa el nombre del club de la camiseta que desea buscar. (Sin mayusculas ni espacios)')
+    if (ingresar == camiseta2.equipo) {
+        camiseta2.ver();
+        busquedaCamiseta = true;
+        break;
+    } else if (ingresar == camiseta1.equipo) {
+        camiseta1.ver();
+        busquedaCamiseta = true;
+        break;
+    } else if (ingresar == camiseta3.equipo) {
+        camiseta3.ver();
+        busquedaCamiseta = true;
+        break;
+    } else if (ingresar == camiseta4.equipo) {
+        camiseta4.ver();
+        busquedaCamiseta = true;
+        break;
+    } else if (ingresar == camiseta5.equipo) {
+        camiseta5.ver();
+        busquedaCamiseta = true;
+        break;
+    } else {
+        alert('Lo sentimos, la camiseta de ' + ingresar + ' no esta disponible.');
+    }
 }
